@@ -1,0 +1,190 @@
+/* NOURISH DASHBOARD — EMERALD GLASS THEME */
+
+.nourish-dashboard {
+  --ivory: #f5f7ef;
+  --glass: rgba(255, 255, 255, .10);
+  --glass-border: rgba(255, 255, 255, .19);
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 80% 5%, rgba(68, 145, 100, .35), transparent 40%),
+    linear-gradient(135deg, #082f24, #145a40 55%, #0e4634);
+  color: var(--ivory);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nourish-dashboard .sidebar {
+  background: rgba(5, 43, 32, .90);
+  border-right: 1px solid var(--glass-border);
+  color: var(--ivory);
+  backdrop-filter: blur(22px);
+}
+
+.nourish-dashboard .brand,
+.nourish-dashboard h1,
+.nourish-dashboard h2,
+.nourish-dashboard h3,
+.nourish-dashboard h4 {
+  color: var(--ivory);
+}
+
+.nourish-dashboard .brand > span:last-child,
+.nourish-dashboard .brand-icon {
+  color: #a8d5b5;
+}
+
+.nourish-dashboard .workspace-label {
+  color: rgba(245, 247, 239, .48);
+}
+
+.nourish-dashboard .sidebar nav > button {
+  color: rgba(245, 247, 239, .72);
+}
+
+.nourish-dashboard .sidebar nav > button.active {
+  background: rgba(255, 255, 255, .15);
+  color: white;
+  border: 1px solid var(--glass-border);
+}
+
+.nourish-dashboard .topbar {
+  background: rgba(8, 47, 36, .65);
+  border-bottom: 1px solid var(--glass-border);
+  color: var(--ivory);
+  backdrop-filter: blur(20px);
+}
+
+.nourish-dashboard .nutrition-card,
+.nourish-dashboard .panel,
+.nourish-dashboard .recipe-card,
+.nourish-dashboard .planner-grid,
+.nourish-dashboard .chart-panel,
+.nourish-dashboard .frequency-panel {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  color: var(--ivory);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .13);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.nourish-dashboard .nutrition-card,
+.nourish-dashboard .recipe-card {
+  transition: transform .2s ease, background .2s ease;
+}
+
+.nourish-dashboard .nutrition-card:hover,
+.nourish-dashboard .recipe-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, .15);
+}
+
+.nourish-dashboard p,
+.nourish-dashboard .panel-heading p,
+.nourish-dashboard .stat-caption,
+.nourish-dashboard .recipe-meta {
+  color: rgba(245, 247, 239, .70);
+}
+
+.nourish-dashboard .stat-value,
+.nourish-dashboard .meal-title strong,
+.nourish-dashboard .food-name > span,
+.nourish-dashboard .recipe-body h3 {
+  color: white;
+}
+
+.nourish-dashboard .stat-value > span,
+.nourish-dashboard .text-button {
+  color: #b5dfbf;
+}
+
+.nourish-dashboard .stat-icon,
+.nourish-dashboard .soft-icon {
+  background: rgba(255, 255, 255, .13);
+  color: #b8e4c3;
+}
+
+.nourish-dashboard .progress-track {
+  background: rgba(255, 255, 255, .16);
+}
+
+.nourish-dashboard .progress-track > div {
+  background: #a8d5b5;
+}
+
+.nourish-dashboard .hero-banner {
+  background: linear-gradient(120deg, #176747, #0b392b);
+  border: 1px solid var(--glass-border);
+  color: white;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .13);
+}
+
+.nourish-dashboard .hero-copy h2,
+.nourish-dashboard .hero-copy p {
+  color: white;
+}
+
+.nourish-dashboard .streak,
+.nourish-dashboard .habit-note,
+.nourish-dashboard .habit-journey {
+  background: rgba(255, 255, 255, .10);
+  border: 1px solid var(--glass-border);
+  color: var(--ivory);
+  border-radius: 14px;
+}
+
+.nourish-dashboard .primary {
+  background: #b5dfbf;
+  color: #103d2b;
+  border-radius: 9px;
+  font-weight: 700;
+}
+
+.nourish-dashboard .secondary {
+  background: rgba(255, 255, 255, .10);
+  color: var(--ivory);
+  border: 1px solid var(--glass-border);
+  border-radius: 9px;
+}
+
+.nourish-dashboard input,
+.nourish-dashboard select,
+.nourish-dashboard textarea {
+  background: rgba(255, 255, 255, .10);
+  color: white;
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+}
+
+.nourish-dashboard input::placeholder,
+.nourish-dashboard textarea::placeholder {
+  color: rgba(245, 247, 239, .48);
+}
+
+.nourish-dashboard .planner-day {
+  background: rgba(255, 255, 255, .07);
+  border-color: var(--glass-border);
+  color: var(--ivory);
+}
+
+.nourish-dashboard .modal {
+  background: #104b38;
+  border: 1px solid var(--glass-border);
+  color: var(--ivory);
+}
+
+.nourish-dashboard .bottom-nav {
+  background: rgba(5, 43, 32, .95);
+  border-color: var(--glass-border);
+}
+
+.nourish-dashboard .bottom-nav > button.active {
+  background: rgba(255, 255, 255, .14);
+  color: #b5dfbf;
+}
+
+@media (max-width: 700px) {
+  .nourish-dashboard .sidebar {
+    background: rgba(5, 43, 32, .98);
+  }
+}

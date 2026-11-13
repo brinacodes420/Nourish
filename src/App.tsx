@@ -26,8 +26,12 @@ function App() {
         />
       )
 
-    case 'dashboard':
-      return <NutriBalance />
+      case 'dashboard':
+        return (
+          <div className="nourish-dashboard">
+            <NutriBalance />
+          </div>
+        )
 
     default:
       return (
